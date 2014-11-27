@@ -64,7 +64,7 @@ syntax on                      " enable syntax highlighting
 nnoremap <leader><space> :noh<cr>    " search highlight off
 nnoremap <M-k> gt                     " tab switching right
 nnoremap <M-j> gT                      " tab switching left
-let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_leader_key='<C-d>'
 " abbreviations -------------------------------------------
 cnoreabbrev W w
 cnoreabbrev Wq wq
