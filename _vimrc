@@ -68,9 +68,7 @@ if has("gui")
   set guifont=Consolas
   set lines=65 columns=110
 endif
-colorscheme solarized
-let g:solarized_italic=0
-let g:lightline = { 'colorscheme': 'solarized' }
+colorscheme molokai
 " ---------------------------------------------------------
 " determine the type of a file based on its name to to
 " allow intelligent auto-indenting for each filetype
@@ -82,7 +80,7 @@ nnoremap <M-k> gt                     " tab switching right
 nnoremap <M-j> gT                      " tab switching left
 nnoremap <C-k> :NERDTreeToggle<CR>         " opens NERDTree
 nnoremap <C-b> <C-W>h:q<CR>                          " exit
-let g:user_emmet_leader_key='<Tab>'     " autocomplete tab,
+let g:user_emmet_leader_key=','           " autocomplete ,,
 let g:ctrlp_map = '<C-P>'
 let g:ctrlp_cmd = 'CtrlP'
 " abbreviations -------------------------------------------
