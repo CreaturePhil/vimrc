@@ -81,7 +81,7 @@ nnoremap <leader><space> :noh<cr>    " search highlight off
 nnoremap <M-k> gt                     " tab switching right
 nnoremap <M-j> gT                      " tab switching left
 nnoremap <C-k> :NERDTreeToggle<CR>         " opens NERDTree
-nnoremap <C-b> :q<CR>                                " exit
+nnoremap <C-b> <C-W>h:q<CR>                          " exit
 let g:user_emmet_leader_key='<Tab>'     " autocomplete tab,
 let g:ctrlp_map = '<C-P>'
 let g:ctrlp_cmd = 'CtrlP'
