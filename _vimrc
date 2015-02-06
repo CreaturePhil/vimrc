@@ -46,11 +46,27 @@ set noswapfile                               " no swp files
 " command line editing ------------------------------------
 set wildmenu               " better command-line completion
 set wildmode=full
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|node_modules|bower_components)$',
+  \ 'file': '\v\.(exe|so|dll|log)$',
+  \ }
+" speeds up CtrlP autocompletion
+" configures CtrlP to use git for autocompletion
+let g:ctrlp_use_caching = 0
+let g:ctrlp_user_command = ['.git', 
+  \ 'cd %s && git ls-files . -co --exclude-standard', 
+  \ 'find %s -type f']
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<space>', 
+  \ '<cr>', '<2-LeftMouse>'],
+  \ }
 " gui settings --------------------------------------------
 if has("gui")
-    set go-=T                        " hide toolbar in gvim
-    set guifont=inconsolata:h16
-    set lines=65 columns=110
+  set guioptions-=m                       " remove menu bar
+  set guioptions-=T                        " remove toolbar
+  set guioptions-=r          " remove right-hand scroll bar
+  set guifont=Consolas
+  set lines=65 columns=110
 endif
 colorscheme solarized
 let g:solarized_italic=0
@@ -64,7 +80,11 @@ syntax on                      " enable syntax highlighting
 nnoremap <leader><space> :noh<cr>    " search highlight off
 nnoremap <M-k> gt                     " tab switching right
 nnoremap <M-j> gT                      " tab switching left
-let g:user_emmet_leader_key='<C-d>'
+nnoremap <C-k> :NERDTreeToggle<CR>         " opens NERDTree
+nnoremap <C-b> :q<CR>                                " exit
+let g:user_emmet_leader_key='<Tab>'     " autocomplete tab,
+let g:ctrlp_map = '<C-P>'
+let g:ctrlp_cmd = 'CtrlP'
 " abbreviations -------------------------------------------
 cnoreabbrev W w
 cnoreabbrev Wq wq
