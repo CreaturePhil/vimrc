@@ -47,13 +47,13 @@ set nobackup
 set nowb
 
 " Search and Completion
-set incsearch    " shows search matches as you type
-set hlsearch     " highlights search results
-set showmatch    " jump to matching bracket
-set smartcase    " if caps, watch case
-set ignorecase   " if all lowercase, ignore case 
-set gdefault     " replaces global by default
-set wildmenu     " better command-line completion
+set incsearch           " shows search matches as you type
+set hlsearch            " highlights search results
+set showmatch           " jump to matching bracket
+set smartcase           " if caps, watch case
+set ignorecase          " if all lowercase, ignore case 
+set gdefault            " replaces global by default
+set wildmenu            " better command-line completion
 set wildmode=full
 
 " Indentation
