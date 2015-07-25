@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdtree'     " tree explorer plugin
 Plugin 'tpope/vim-surround'      " quoting/parenthesizing made simple
 Plugin 'itchyny/lightline.vim'   " light and configurable statusline/tabline
 Plugin 'nanotech/jellybeans.vim' " colorful, dark color scheme
+Plugin 'mattn/emmet-vim'
 Plugin 'raichoo/haskell-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,6 +73,7 @@ nnoremap <M-k> gt                    " tab switching right
 nnoremap <M-j> gT                    " tab switching left
 map <C-l> :NERDTreeToggle<CR>        " nerd tree shortcut
 map <C-p> :PluginInstall<CR>         " vundle plugin install shortcut
+let g:user_emmet_leader_key=','      " autocomplete ,,
 
 " Abbreviations
 cnoreabbrev W w
