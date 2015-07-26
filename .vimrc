@@ -17,6 +17,7 @@ Plugin 'itchyny/lightline.vim'   " light and configurable statusline/tabline
 Plugin 'flazz/vim-colorschemes'  " one colorscheme pack to rule them all!
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'raichoo/haskell-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
