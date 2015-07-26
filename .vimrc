@@ -26,6 +26,7 @@ filetype plugin indent on    " required
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
       \ }
+ let g:AutoPairsFlyMode = 1
 
 " General
 set number                      " display line numbers
