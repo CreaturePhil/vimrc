@@ -16,6 +16,7 @@ Plugin 'tpope/vim-surround'      " quoting/parenthesizing made simple
 Plugin 'itchyny/lightline.vim'   " light and configurable statusline/tabline
 Plugin 'nanotech/jellybeans.vim' " colorful, dark color scheme
 Plugin 'mattn/emmet-vim'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'raichoo/haskell-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
