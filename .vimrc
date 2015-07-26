@@ -14,7 +14,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'     " tree explorer plugin
 Plugin 'tpope/vim-surround'      " quoting/parenthesizing made simple
 Plugin 'itchyny/lightline.vim'   " light and configurable statusline/tabline
-Plugin 'nanotech/jellybeans.vim' " colorful, dark color scheme
+Plugin 'flazz/vim-colorschemes'  " one colorscheme pack to rule them all!
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'raichoo/haskell-vim'
@@ -23,10 +23,10 @@ call vundle#end()            " required
 " determine the type of a file based on its name to to
 " allow intelligent auto-indenting for each filetype
 filetype plugin indent on    " required
+let g:AutoPairsFlyMode = 1
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
       \ }
- let g:AutoPairsFlyMode = 1
 
 " General
 set number                      " display line numbers
@@ -42,7 +42,7 @@ set linebreak                   " wrap between words
 set laststatus=2                " always show status line
 set ruler                       " show cursor position
 set scrolloff=1                 " Start scrolling when we're 1 line away
-colorscheme jellybeans
+colorscheme iceberg
 
 " Turn Off Swap Files
 set noswapfile
